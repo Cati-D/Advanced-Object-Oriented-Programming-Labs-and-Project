@@ -1,0 +1,34 @@
+package readwrite.write;
+
+import com.opencsv.CSVWriter;
+
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.sql.Timestamp;
+
+public class Writer {
+
+    private static File file = new File("C:\\Users\\Cati\\Desktop\\Uni\\II\\Sem2\\PAO\\Proiect\\src\\readwrite\\Audit");
+
+    public void writeData(String className, String methodName) {
+
+        Timestamp timestamp = new Timestamp(System.currentTimeMillis());
+
+        try {
+            FileWriter output = new FileWriter(file, true);
+            CSVWriter writer = new CSVWriter(output);
+
+            String message = "Method " + methodName + " from class " + className + "was called.";
+            String[] messageCSV = {timestamp.toString(), message};
+            System.out.println(timestamp.toString());
+
+            writer.writeNext(messageCSV);
+
+            writer.close();
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+}

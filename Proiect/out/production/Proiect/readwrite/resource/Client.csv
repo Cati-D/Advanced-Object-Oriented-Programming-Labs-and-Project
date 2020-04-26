@@ -1,0 +1,6 @@
+firstName, lastName, emailAddress, cardType, cardNumber, cvv, name, address, country, name, price, numberOfMembers, numberOfScreen, resolution
+John, Smith, john.smith@yahoo.com, Visa, 1, 123, John Smith, 233 Ch du Lac, Canada, Basic, 8.9, 1, 1, SD
+John, Lennon, john.lenny@yahoo.com, MaterCard, 2, 124, John Lennon, 234 Ch du Lac, Canada, Standard, 12.99, 2, 2, HD
+Alex, Dragomir, alex.dragomires@yahoo.com, Visa, 3; 174, Alex Dragomir, Str. Academiei nr. 14, Romania, 18.99, 4, 4, HD/4K UltraHD
+
+
